@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>lucky</title>
+  
+  <subtitle>保持对优秀的热情</subtitle>
+  <link href="https://luwanglin.gitee.io/atom.xml" rel="self"/>
+  
+  <link href="https://luwanglin.gitee.io/"/>
+  <updated>2021-07-19T15:14:18.134Z</updated>
+  <id>https://luwanglin.gitee.io/</id>
+  
+  <author>
+    <name>luwanglin</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IDEA中运行java程序的一直打印GC日志信息</title>
+    <link href="https://luwanglin.gitee.io/2021/07/19/idea-zhong-yun-xing-java-cheng-xu-de-yi-zhi-da-yin-gc-ri-zhi-xin-xi/"/>
+    <id>https://luwanglin.gitee.io/2021/07/19/idea-zhong-yun-xing-java-cheng-xu-de-yi-zhi-da-yin-gc-ri-zhi-xin-xi/</id>
+    <published>2021-07-19T23:04:38.000Z</published>
+    <updated>2021-07-19T15:14:18.134Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;问题复现&quot;&gt;&lt;a href=&quot;#问题复现&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="开发工具" scheme="https://luwanglin.gitee.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="IDEA" scheme="https://luwanglin.gitee.io/tags/IDEA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL中的锁总结</title>
+    <link href="https://luwanglin.gitee.io/2021/07/19/mysql-zhong-de-suo-zong-jie/"/>
+    <id>https://luwanglin.gitee.io/2021/07/19/mysql-zhong-de-suo-zong-jie/</id>
+    <published>2021-07-19T22:41:10.000Z</published>
+    <updated>2021-07-19T15:14:18.134Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;锁是计算机协调多个进程或线程并发访问某一资源的机制。锁保证数据并发访问的一致性、有效性；锁冲突也是影响数据库并发访问性能的一个重要因素。锁是Mysql在服务器层和存储引擎层的的并发控制。&lt;/p&gt;
+&lt;p&gt;加锁是消耗资源的，锁的各种操作，包括获得锁、检测锁是否是否已解除、释放锁</summary>
+        
+      
+    
+    
+    
+    <category term="数据库" scheme="https://luwanglin.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="MySQL" scheme="https://luwanglin.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/"/>
+    
+    
+    <category term="锁" scheme="https://luwanglin.gitee.io/tags/%E9%94%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>显存占用但查不到异常情况</title>
+    <link href="https://luwanglin.gitee.io/2021/07/12/xian-cun-zhan-yong-dan-cha-bu-dao-yi-chang-qing-kuang/"/>
+    <id>https://luwanglin.gitee.io/2021/07/12/xian-cun-zhan-yong-dan-cha-bu-dao-yi-chang-qing-kuang/</id>
+    <published>2021-07-12T10:09:48.000Z</published>
+    <updated>2021-07-19T15:14:18.134Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天遇到&lt;code&gt;nvidia-smi&lt;/code&gt; 查不到显存占用的程序，但是显存一直被占用无法释放。&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="服务器环境配置" scheme="https://luwanglin.gitee.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    <category term="问题记录和解决" scheme="https://luwanglin.gitee.io/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95%E5%92%8C%E8%A7%A3%E5%86%B3/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Thread.join()原理</title>
+    <link href="https://luwanglin.gitee.io/2021/04/29/thread-join-yuan-li/"/>
+    <id>https://luwanglin.gitee.io/2021/04/29/thread-join-yuan-li/</id>
+    <published>2021-04-29T17:12:53.000Z</published>
+    <updated>2021-07-19T15:14:18.134Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;0-Join&quot;&gt;&lt;a href=&quot;#0-Join&quot; class=&quot;headerlink&quot; title=&quot;0.Join()&quot;&gt;&lt;/a&gt;0.Join()&lt;/h1&gt;&lt;p&gt;线程的合并的含义就是 &lt;strong&gt;将几个并行线程的线程合并为一个单线程执行&lt;/strong&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="java学习笔记" scheme="https://luwanglin.gitee.io/categories/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="多线程" scheme="https://luwanglin.gitee.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    
+    <category term="thread.join()" scheme="https://luwanglin.gitee.io/tags/thread-join/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从ReentrantLock的实现看AQS的原理及应用</title>
+    <link href="https://luwanglin.gitee.io/2021/04/28/cong-reentrantlock-de-shi-xian-kan-aqs-de-yuan-li-ji-ying-yong-zhuan-zai/"/>
+    <id>https://luwanglin.gitee.io/2021/04/28/cong-reentrantlock-de-shi-xian-kan-aqs-de-yuan-li-ji-ying-yong-zhuan-zai/</id>
+    <published>2021-04-28T17:49:04.000Z</published>
+    <updated>2021-07-19T15:14:18.134Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;转载自美团技术团队博客文章，原文 &lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="AQS" scheme="https://luwanglin.gitee.io/tags/AQS/"/>
+    
+    <category term="ReentrantLock" scheme="https://luwanglin.gitee.io/tags/ReentrantLock/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>磁盘分区和双系统安装原理—鸟哥的Linux私房菜</title>
+    <link href="https://luwanglin.gitee.io/2021/04/26/ci-pan-fen-qu-he-shuang-xi-tong-an-zhuang-yuan-li-niao-ge-de-linux-si-fang-cai/"/>
+    <id>https://luwanglin.gitee.io/2021/04/26/ci-pan-fen-qu-he-shuang-xi-tong-an-zhuang-yuan-li-niao-ge-de-linux-si-fang-cai/</id>
+    <published>2021-04-26T15:26:52.000Z</published>
+    <updated>2021-07-19T15:14:18.134Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;磁盘分区和双系统安装原理—鸟哥的Linux私房菜&quot;&gt;&lt;a href=&quot;#磁盘分区和双系统安装原理—鸟哥的Linux私房菜&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Linux学习" scheme="https://luwanglin.gitee.io/categories/Linux%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="分区" scheme="https://luwanglin.gitee.io/tags/%E5%88%86%E5%8C%BA/"/>
+    
+    <category term="双系统" scheme="https://luwanglin.gitee.io/tags/%E5%8F%8C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java泛型</title>
+    <link href="https://luwanglin.gitee.io/2020/08/19/java-fan-xing/"/>
+    <id>https://luwanglin.gitee.io/2020/08/19/java-fan-xing/</id>
+    <published>2020-08-19T11:06:03.000Z</published>
+    <updated>2021-07-19T15:14:18.134Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;C-泛型&quot;&gt;&lt;a href=&quot;#C-泛型&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="java学习笔记" scheme="https://luwanglin.gitee.io/categories/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="泛型" scheme="https://luwanglin.gitee.io/tags/%E6%B3%9B%E5%9E%8B/"/>
+    
+    <category term="类型擦除" scheme="https://luwanglin.gitee.io/tags/%E7%B1%BB%E5%9E%8B%E6%93%A6%E9%99%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>服务器搭建远程docker深度学习环境</title>
+    <link href="https://luwanglin.gitee.io/2020/08/18/fu-wu-qi-da-jian-yuan-cheng-docker-shen-du-xue-xi-huan-jing/"/>
+    <id>https://luwanglin.gitee.io/2020/08/18/fu-wu-qi-da-jian-yuan-cheng-docker-shen-du-xue-xi-huan-jing/</id>
+    <published>2020-08-18T11:34:41.000Z</published>
+    <updated>2021-07-19T15:14:18.134Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;服务器搭建远程docker深度学习环境&quot;&gt;&lt;a href=&quot;#服务器搭建远程docker深度学习环境&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="深度学习环境配置" scheme="https://luwanglin.gitee.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+    
+    <category term="docker" scheme="https://luwanglin.gitee.io/tags/docker/"/>
+    
+    <category term="pycharm" scheme="https://luwanglin.gitee.io/tags/pycharm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PicGo软件搭配gitee实现图床</title>
+    <link href="https://luwanglin.gitee.io/2020/08/16/picgo-ruan-jian-da-pei-gitee-shi-xian-tu-chuang/"/>
+    <id>https://luwanglin.gitee.io/2020/08/16/picgo-ruan-jian-da-pei-gitee-shi-xian-tu-chuang/</id>
+    <published>2020-08-16T20:41:45.000Z</published>
+    <updated>2021-07-19T15:14:18.134Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-安装PicGo软件，并配置gitee&quot;&gt;&lt;a href=&quot;#1-安装PicGo软件，并配置gitee&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="撰写博客" scheme="https://luwanglin.gitee.io/categories/%E6%92%B0%E5%86%99%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="picGo" scheme="https://luwanglin.gitee.io/tags/picGo/"/>
+    
+    <category term="码云" scheme="https://luwanglin.gitee.io/tags/%E7%A0%81%E4%BA%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bootstrap 4 多媒体对象</title>
+    <link href="https://luwanglin.gitee.io/2020/08/16/bootstrap-4-duo-mei-ti-dui-xiang/"/>
+    <id>https://luwanglin.gitee.io/2020/08/16/bootstrap-4-duo-mei-ti-dui-xiang/</id>
+    <published>2020-08-16T20:36:08.000Z</published>
+    <updated>2021-07-19T15:14:18.130Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Bootstrap-4-多媒体对象&quot;&gt;&lt;a href=&quot;#Bootstrap-4-多媒体对象&quot; class=&quot;headerlink&quot; title=&quot;Bootstrap 4 多媒体对象&quot;&gt;&lt;/a&gt;Bootstrap 4 多媒体对象&lt;/h2&gt;&lt;p&gt;Bootstrap</summary>
+        
+      
+    
+    
+    
+    <category term="Bootstrap4 学习笔记" scheme="https://luwanglin.gitee.io/categories/Bootstrap4-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="多媒体对象" scheme="https://luwanglin.gitee.io/tags/%E5%A4%9A%E5%AA%92%E4%BD%93%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bootstrap 滚动监听(Scrollspy)</title>
+    <link href="https://luwanglin.gitee.io/2020/08/16/bootstrap-gun-dong-jian-ting-scrollspy/"/>
+    <id>https://luwanglin.gitee.io/2020/08/16/bootstrap-gun-dong-jian-ting-scrollspy/</id>
+    <published>2020-08-16T20:36:08.000Z</published>
+    <updated>2021-07-19T15:14:18.130Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Bootstrap-滚动监听-Scrollspy&quot;&gt;&lt;a href=&quot;#Bootstrap-滚动监听-Scrollspy&quot; class=&quot;headerlink&quot; title=&quot;Bootstrap 滚动监听(Scrollspy)&quot;&gt;&lt;/a&gt;Bootstrap</summary>
+        
+      
+    
+    
+    
+    <category term="Bootstrap4 学习笔记" scheme="https://luwanglin.gitee.io/categories/Bootstrap4-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="滚动监听" scheme="https://luwanglin.gitee.io/tags/%E6%BB%9A%E5%8A%A8%E7%9B%91%E5%90%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bootstrap4 Jumbotron</title>
+    <link href="https://luwanglin.gitee.io/2020/08/16/bootstrap4-jumbotron/"/>
+    <id>https://luwanglin.gitee.io/2020/08/16/bootstrap4-jumbotron/</id>
+    <published>2020-08-16T20:36:08.000Z</published>
+    <updated>2021-07-19T15:14:18.130Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Bootstrap4-Jumbotron&quot;&gt;&lt;a href=&quot;#Bootstrap4-Jumbotron&quot; class=&quot;headerlink&quot; title=&quot;Bootstrap4 Jumbotron&quot;&gt;&lt;/a&gt;Bootstrap4</summary>
+        
+      
+    
+    
+    
+    <category term="Bootstrap4 学习笔记" scheme="https://luwanglin.gitee.io/categories/Bootstrap4-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Jumbotron" scheme="https://luwanglin.gitee.io/tags/Jumbotron/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bootstrap4 下拉菜单</title>
+    <link href="https://luwanglin.gitee.io/2020/08/16/bootstrap4-xia-la-cai-dan/"/>
+    <id>https://luwanglin.gitee.io/2020/08/16/bootstrap4-xia-la-cai-dan/</id>
+    <published>2020-08-16T20:36:08.000Z</published>
+    <updated>2021-07-19T15:14:18.130Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Bootstrap4-下拉菜单&quot;&gt;&lt;a href=&quot;#Bootstrap4-下拉菜单&quot; class=&quot;headerlink&quot; title=&quot;Bootstrap4 下拉菜单&quot;&gt;&lt;/a&gt;Bootstrap4 下拉菜单&lt;/h2&gt;&lt;p&gt;Bootstrap4</summary>
+        
+      
+    
+    
+    
+    <category term="Bootstrap4 学习笔记" scheme="https://luwanglin.gitee.io/categories/Bootstrap4-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="下拉菜单" scheme="https://luwanglin.gitee.io/tags/%E4%B8%8B%E6%8B%89%E8%8F%9C%E5%8D%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bootstrap4 信息提示框</title>
+    <link href="https://luwanglin.gitee.io/2020/08/16/bootstrap4-xin-xi-ti-shi-kuang/"/>
+    <id>https://luwanglin.gitee.io/2020/08/16/bootstrap4-xin-xi-ti-shi-kuang/</id>
+    <published>2020-08-16T20:36:08.000Z</published>
+    <updated>2021-07-19T15:14:18.130Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Bootstrap4-信息提示框&quot;&gt;&lt;a href=&quot;#Bootstrap4-信息提示框&quot; class=&quot;headerlink&quot; title=&quot;Bootstrap4 信息提示框&quot;&gt;&lt;/a&gt;Bootstrap4 信息提示框&lt;/h2&gt;&lt;p&gt;Bootstrap 4</summary>
+        
+      
+    
+    
+    
+    <category term="Bootstrap4 学习笔记" scheme="https://luwanglin.gitee.io/categories/Bootstrap4-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="信息提示框" scheme="https://luwanglin.gitee.io/tags/%E4%BF%A1%E6%81%AF%E6%8F%90%E7%A4%BA%E6%A1%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bootstrap4 分页</title>
+    <link href="https://luwanglin.gitee.io/2020/08/16/bootstrap4-fen-ye/"/>
+    <id>https://luwanglin.gitee.io/2020/08/16/bootstrap4-fen-ye/</id>
+    <published>2020-08-16T20:36:08.000Z</published>
+    <updated>2021-07-19T15:14:18.130Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Bootstrap4-分页&quot;&gt;&lt;a href=&quot;#Bootstrap4-分页&quot; class=&quot;headerlink&quot; title=&quot;Bootstrap4 分页&quot;&gt;&lt;/a&gt;Bootstrap4</summary>
+        
+      
+    
+    
+    
+    <category term="Bootstrap4 学习笔记" scheme="https://luwanglin.gitee.io/categories/Bootstrap4-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="分页" scheme="https://luwanglin.gitee.io/tags/%E5%88%86%E9%A1%B5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bootstrap4 列表组</title>
+    <link href="https://luwanglin.gitee.io/2020/08/16/bootstrap4-lie-biao-zu/"/>
+    <id>https://luwanglin.gitee.io/2020/08/16/bootstrap4-lie-biao-zu/</id>
+    <published>2020-08-16T20:36:08.000Z</published>
+    <updated>2021-07-19T15:14:18.130Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Bootstrap4-列表组&quot;&gt;&lt;a href=&quot;#Bootstrap4-列表组&quot; class=&quot;headerlink&quot; title=&quot;Bootstrap4 列表组&quot;&gt;&lt;/a&gt;Bootstrap4</summary>
+        
+      
+    
+    
+    
+    <category term="Bootstrap4 学习笔记" scheme="https://luwanglin.gitee.io/categories/Bootstrap4-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="列表组" scheme="https://luwanglin.gitee.io/tags/%E5%88%97%E8%A1%A8%E7%BB%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bootstrap4 卡片</title>
+    <link href="https://luwanglin.gitee.io/2020/08/16/bootstrap4-qia-pian/"/>
+    <id>https://luwanglin.gitee.io/2020/08/16/bootstrap4-qia-pian/</id>
+    <published>2020-08-16T20:36:08.000Z</published>
+    <updated>2021-07-19T15:14:18.130Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Bootstrap4-卡片&quot;&gt;&lt;a href=&quot;#Bootstrap4-卡片&quot; class=&quot;headerlink&quot; title=&quot;Bootstrap4 卡片&quot;&gt;&lt;/a&gt;Bootstrap4 卡片&lt;/h2&gt;&lt;h3 id=&quot;简单的卡片&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Bootstrap4 学习笔记" scheme="https://luwanglin.gitee.io/categories/Bootstrap4-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="卡片" scheme="https://luwanglin.gitee.io/tags/%E5%8D%A1%E7%89%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bootstrap4 图像形状</title>
+    <link href="https://luwanglin.gitee.io/2020/08/16/bootstrap4-tu-xiang-xing-zhuang/"/>
+    <id>https://luwanglin.gitee.io/2020/08/16/bootstrap4-tu-xiang-xing-zhuang/</id>
+    <published>2020-08-16T20:36:08.000Z</published>
+    <updated>2021-07-19T15:14:18.130Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Bootstrap4-图像形状&quot;&gt;&lt;a href=&quot;#Bootstrap4-图像形状&quot; class=&quot;headerlink&quot; title=&quot;Bootstrap4 图像形状&quot;&gt;&lt;/a&gt;Bootstrap4 图像形状&lt;/h2&gt;&lt;h3 id=&quot;圆角图片&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Bootstrap4 学习笔记" scheme="https://luwanglin.gitee.io/categories/Bootstrap4-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="图像形状" scheme="https://luwanglin.gitee.io/tags/%E5%9B%BE%E5%83%8F%E5%BD%A2%E7%8A%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bootstrap4 安装使用</title>
+    <link href="https://luwanglin.gitee.io/2020/08/16/bootstrap4-an-zhuang-shi-yong/"/>
+    <id>https://luwanglin.gitee.io/2020/08/16/bootstrap4-an-zhuang-shi-yong/</id>
+    <published>2020-08-16T20:36:08.000Z</published>
+    <updated>2021-07-19T15:14:18.130Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Bootstrap4-安装使用&quot;&gt;&lt;a href=&quot;#Bootstrap4-安装使用&quot; class=&quot;headerlink&quot; title=&quot;Bootstrap4 安装使用&quot;&gt;&lt;/a&gt;Bootstrap4 安装使用&lt;/h2&gt;&lt;p&gt;我们可以通过以下两种方式来安装</summary>
+        
+      
+    
+    
+    
+    <category term="Bootstrap4 学习笔记" scheme="https://luwanglin.gitee.io/categories/Bootstrap4-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Bootstrap4 导航</title>
+    <link href="https://luwanglin.gitee.io/2020/08/16/bootstrap4-dao-hang/"/>
+    <id>https://luwanglin.gitee.io/2020/08/16/bootstrap4-dao-hang/</id>
+    <published>2020-08-16T20:36:08.000Z</published>
+    <updated>2021-07-19T15:14:18.130Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Bootstrap4-导航&quot;&gt;&lt;a href=&quot;#Bootstrap4-导航&quot; class=&quot;headerlink&quot; title=&quot;Bootstrap4 导航&quot;&gt;&lt;/a&gt;Bootstrap4 导航&lt;/h2&gt;&lt;p&gt;如果你想创建一个简单的水平导航栏，可以在</summary>
+        
+      
+    
+    
+    
+    <category term="Bootstrap4 学习笔记" scheme="https://luwanglin.gitee.io/categories/Bootstrap4-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="导航" scheme="https://luwanglin.gitee.io/tags/%E5%AF%BC%E8%88%AA/"/>
+    
+  </entry>
+  
+</feed>

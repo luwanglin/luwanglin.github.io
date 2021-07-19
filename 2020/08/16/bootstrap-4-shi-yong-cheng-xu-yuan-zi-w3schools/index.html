@@ -1,0 +1,2028 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Bootstrap 4实用程序（源自W3schools）, lucky">
+    <meta name="description" content="最美的不是下雨天，点击左下角来听听我的歌单吧！">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="baidu-site-verification" content="code-qmQBI3gzvo" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Bootstrap 4实用程序（源自W3schools） | lucky</title>
+    <link rel="icon" type="image/png" href="/luckyforefforts/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/luckyforefforts/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/luckyforefforts/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/luckyforefforts/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/luckyforefforts/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/luckyforefforts/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/luckyforefforts/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/luckyforefforts/css/my.css">
+
+    <script src="/luckyforefforts/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/luckyforefforts/atom.xml" title="lucky" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/luckyforefforts/" class="waves-effect waves-light">
+                    
+                    <img src="/luckyforefforts/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">lucky</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/luckyforefforts/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/luckyforefforts/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/luckyforefforts/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/luckyforefforts/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/luckyforefforts/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/luckyforefforts/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/luckyforefforts/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/luckyforefforts/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">lucky</div>
+        <div class="logo-desc">
+            
+            最美的不是下雨天，点击左下角来听听我的歌单吧！
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/luckyforefforts/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/luckyforefforts/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/luckyforefforts/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/luckyforefforts/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/luckyforefforts/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/luckyforefforts/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/luckyforefforts/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/luwanglin" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>follow me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/luwanglin" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="follow me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/luckyforefforts/medias/featureimages/8.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Bootstrap 4实用程序（源自W3schools）</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/luckyforefforts/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/luckyforefforts/tags/Bootstrap%E5%B8%B8%E7%94%A8%E6%A0%B7%E5%BC%8F%E6%89%8B%E5%86%8C/">
+                                <span class="chip bg-color">Bootstrap常用样式手册</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/luckyforefforts/categories/Bootstrap4-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category">
+                                Bootstrap4 学习笔记
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-08-16
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2021-07-19
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    3.1k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    16 分
+                </div>
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/luckyforefforts/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="Bootstrap-4实用程序（源自W3schools）"><a href="#Bootstrap-4实用程序（源自W3schools）" class="headerlink" title="Bootstrap 4实用程序（源自W3schools）"></a>Bootstrap 4实用程序（源自W3schools）</h2><p>Bootstrap 4具有许多实用程序/帮助程序类，可在不使用任何CSS代码的情况下快速设置元素的样式。</p>
+<hr>
+<h2 id="边框"><a href="#边框" class="headerlink" title="边框"></a>边框</h2><p>使用这些<code>border</code>类来添加或删除元素的边框：</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border border-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border border-top-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border border-right-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border border-bottom-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border border-left-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_borders&amp;stacked=h">自己尝试»</a></p>
+<hr>
+<h2 id="边框颜色"><a href="#边框颜色" class="headerlink" title="边框颜色"></a>边框颜色</h2><p>使用任何上下文边框颜色类向边框添加颜色：</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border border-primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border border-secondary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border border-success<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border border-danger<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border border-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border border-info<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border border-light<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border border-dark<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border border-white<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_borders_colors&amp;stacked=h">自己尝试»</a></p>
+<hr>
+<h2 id="边界半径"><a href="#边界半径" class="headerlink" title="边界半径"></a>边界半径</h2><p>使用类将圆角添加到元素<code>rounded</code>：</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded-sm<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded-lg<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded-top<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded-right<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded-bottom<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded-left<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded-circle<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_borders_rounded&amp;stacked=h">自己尝试»</a></p>
+<h2 id="浮动和Clearfix"><a href="#浮动和Clearfix" class="headerlink" title="浮动和Clearfix"></a>浮动和Clearfix</h2><p>在<code>.float-right</code>类的右侧浮动元素，在或的左侧浮动元素，并在类中<code>.float-left</code>清除浮动 元素<code>.clearfix</code>：</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>clearfix<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>float-left<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Float left<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>float-right<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Float right<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_float&amp;stacked=h">自己尝试»</a></p>
+<h2 id="响应式浮动"><a href="#响应式浮动" class="headerlink" title="响应式浮动"></a>响应式浮动</h2><p>根据屏幕宽度向左或向右浮动元素，并带有响应浮动类（<code>.float-*-left|right</code>-其中*为<code>sm</code>（&gt; = 576px），<code>md</code>（&gt; = 768px），<code>lg</code>（&gt; = 992px）或<code>xl</code>（&gt; = 1200px））：</p>
+<h3 id="例"><a href="#例" class="headerlink" title="例"></a>例</h3><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>float-sm-right<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Float right on small screens or wider<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>float-md-right<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Float right on medium screens or wider<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>float-lg-right<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Float right on large screens or wider<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>float-xl-right<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Float right on extra large screens or wider<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>float-none<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Float none<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_float_resp&amp;stacked=h">自己尝试»</a></p>
+<h2 id="居中对齐"><a href="#居中对齐" class="headerlink" title="居中对齐"></a>居中对齐</h2><p>使元素与<code>.mx-auto</code>类居中（添加margin-left和margin-right：auto）：</p>
+<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mx-auto bg-warning<span class="token punctuation">"</span></span> <span class="token style-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token style language-css"><span class="token property">width</span><span class="token punctuation">:</span>150px</span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>Centered<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_center&amp;stacked=h">自己尝试»</a></p>
+<h2 id="宽度"><a href="#宽度" class="headerlink" title="宽度"></a>宽度</h2><p>设置元素的宽度与W- *类（<code>.w-25</code>，<code>.w-50</code>，<code>.w-75</code>，<code>.w-100</code>，<code>.mw-100</code>）：</p>
+<h3 id="例-1"><a href="#例-1" class="headerlink" title="例"></a>例</h3><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>w-25 bg-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Width 25%<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>w-50 bg-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Width 50%<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>w-75 bg-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Width 75%<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>w-100 bg-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Width 100%<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mw-100 bg-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Max Width 100%<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_width&amp;stacked=h">自己尝试»</a></p>
+<h2 id="高度"><a href="#高度" class="headerlink" title="高度"></a>高度</h2><p>设置一个元件的高度与H- *类（<code>.h-25</code>，<code>.h-50</code>，<code>.h-75</code>，<code>.h-100</code>，<code>.mh-100</code>）：</p>
+<h3 id="例-2"><a href="#例-2" class="headerlink" title="例"></a>例</h3><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token style-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token style language-css"><span class="token property">height</span><span class="token punctuation">:</span>200px<span class="token punctuation">;</span><span class="token property">background-color</span><span class="token punctuation">:</span>#ddd</span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-25 bg-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Height 25%<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-50 bg-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Height 50%<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-75 bg-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Height 75%<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-100 bg-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Height 100%<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mh-100 bg-warning<span class="token punctuation">"</span></span> <span class="token style-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token style language-css"><span class="token property">height</span><span class="token punctuation">:</span>500px</span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>Max Height 100%<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_height&amp;stacked=h">自己尝试»</a></p>
+<h2 id="间距"><a href="#间距" class="headerlink" title="间距"></a>间距</h2><p>Bootstrap 4具有广泛的响应边距和填充实用程序类。它们适用于所有断点：<code>xs</code>（&lt;= 576px），<code>sm</code>（&gt; = 576px），<code>md</code>（&gt; = 768px），<code>lg</code>（&gt; = 992px）或<code>xl</code>（&gt; = 1200px））：</p>
+<p>这些类的格式使用：<code>{property}{sides}-{size}</code>对于<code>xs</code>和<code>{property}{sides}-{breakpoint}-{size}</code>为<code>sm</code>，<code>md</code>，<code>lg</code>，和<code>xl</code>。</p>
+<p>其中<em>财产</em>是以下之一：</p>
+<ul>
+<li><code>m</code> -套 <code>margin</code></li>
+<li><code>p</code> -套 <code>padding</code></li>
+</ul>
+<p>其中<em>边</em>是以下之一：</p>
+<ul>
+<li><code>t</code>-套<code>margin-top</code>或<code>padding-top</code></li>
+<li><code>b</code>-套<code>margin-bottom</code>或<code>padding-bottom</code></li>
+<li><code>l</code>-套<code>margin-left</code>或<code>padding-left</code></li>
+<li><code>r</code>-套<code>margin-right</code>或<code>padding-right</code></li>
+<li><code>x</code>-集都<code>padding-left</code>和<code>padding-right</code>或<code>margin-left</code>与<code>margin-right</code></li>
+<li><code>y</code>-集都<code>padding-top</code>和<code>padding-bottom</code>或<code>margin-top</code>与<code>margin-bottom</code></li>
+<li>空白- 在元素的所有4侧设置a <code>margin</code>或<code>padding</code></li>
+</ul>
+<p>其中<em>大小</em>是以下之一：</p>
+<ul>
+<li><code>0</code>-套<code>margin</code>或<code>padding</code>以<code>0</code></li>
+<li><code>1</code>-设置为<code>margin</code>或设置<code>padding</code>为<code>.25rem</code>（如果font-size为16px，则为4px）</li>
+<li><code>2</code>-设置为<code>margin</code>或设置<code>padding</code>为<code>.5rem</code>（如果字体大小为16px，则为8px）</li>
+<li><code>3</code>-设置为<code>margin</code>或设置<code>padding</code>为<code>1rem</code>（如果font-size为16px，则为16px）</li>
+<li><code>4</code>-集<code>margin</code>或<code>padding</code>到<code>1.5rem</code>（24像素如果字体大小是16像素）</li>
+<li><code>5</code>-设置为<code>margin</code>或设置<code>padding</code>为<code>3rem</code>（如果字体大小为16px，则为48px）</li>
+<li><code>auto</code>-设置<code>margin</code>为自动</li>
+</ul>
+<p><strong>注意：</strong>边距也可以为负数，方法是在<em>size</em>前面添加“ n” ：</p>
+<ul>
+<li><code>n1</code>-设置<code>margin</code>为<code>-.25rem</code>（如果字体大小为16px，则为–4px）</li>
+<li><code>n2</code>-设置<code>margin</code>为<code>-.5rem</code>（如果字体大小为16px，则为–8px）</li>
+<li><code>n3</code>-设置<code>margin</code>为<code>-1rem</code>（如果字体大小为16px，则为-16px）</li>
+<li><code>n4</code>-设置<code>margin</code>为<code>-1.5rem</code>（如果字体大小为16px，则为-24px）</li>
+<li><code>n5</code>-设置<code>margin</code>为<code>-3rem</code>（如果字体大小为16px，则为-48px）</li>
+</ul>
+<h3 id="例-3"><a href="#例-3" class="headerlink" title="例"></a>例</h3><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>pt-4 bg-warning<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>I only have a top padding (1.5rem = 24px)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>p-5 bg-success<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>I have a padding on all sides (3rem = 48px)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>m-5 pb-5 bg-info<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>I have a margin on all sides (3rem = 48px) and a bottom padding (3rem = 48px)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_spacing&amp;stacked=h">自己尝试»</a></p>
+<h3 id="更多间距示例"><a href="#更多间距示例" class="headerlink" title="更多间距示例"></a>更多间距示例</h3><table>
+<thead>
+<tr>
+<th><code>.m-# / m-*-#</code></th>
+<th>四面八方</th>
+<th><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_spacing&amp;stacked=h">试试吧</a></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>.mt-# / mt-*-#</code></td>
+<td>边距顶部</td>
+<td><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_mt-responsive&amp;stacked=h">试试吧</a></td>
+</tr>
+<tr>
+<td><code>.mb-# / mb-*-#</code></td>
+<td>保证金底部</td>
+<td><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_mb-responsive&amp;stacked=h">试试吧</a></td>
+</tr>
+<tr>
+<td><code>.ml-# / ml-*-#</code></td>
+<td>左边距</td>
+<td><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_ml-responsive&amp;stacked=h">试试吧</a></td>
+</tr>
+<tr>
+<td><code>.mr-# / mr-*-#</code></td>
+<td>保证金权</td>
+<td><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_mr-responsive&amp;stacked=h">试试吧</a></td>
+</tr>
+<tr>
+<td><code>.mx-# / mx-*-#</code></td>
+<td>左右边距</td>
+<td><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_mx-responsive&amp;stacked=h">试试吧</a></td>
+</tr>
+<tr>
+<td><code>.my-# / my-*-#</code></td>
+<td>上下边距</td>
+<td><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_my-responsive&amp;stacked=h">试试吧</a></td>
+</tr>
+<tr>
+<td><code>.p-# / p-*-#</code></td>
+<td>四面填充</td>
+<td><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_p-responsive&amp;stacked=h">试试吧</a></td>
+</tr>
+<tr>
+<td><code>.pt-# / pt-*-#</code></td>
+<td>填充顶部</td>
+<td><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_pt-responsive&amp;stacked=h">试试吧</a></td>
+</tr>
+<tr>
+<td><code>.pb-# / pb-*-#</code></td>
+<td>填充底部</td>
+<td><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_pb-responsive&amp;stacked=h">试试吧</a></td>
+</tr>
+<tr>
+<td><code>.pl-# / pl-*-#</code></td>
+<td>向左填充</td>
+<td><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_pl-responsive&amp;stacked=h">试试吧</a></td>
+</tr>
+<tr>
+<td><code>.pr-# / pr-*-#</code></td>
+<td>向右填充</td>
+<td><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_pr-responsive&amp;stacked=h">试试吧</a></td>
+</tr>
+<tr>
+<td><code>.py-# / py-*-#</code></td>
+<td>填充顶部和底部</td>
+<td><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_py-responsive&amp;stacked=h">试试吧</a></td>
+</tr>
+<tr>
+<td><code>.px-# / px-*-#</code></td>
+<td>左右填充</td>
+<td><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_px-responsive&amp;stacked=h">试试吧</a></td>
+</tr>
+</tbody></table>
+<h2 id="暗影"><a href="#暗影" class="headerlink" title="暗影"></a>暗影</h2><p>使用这些<code>shadow-</code>类向元素添加阴影：</p>
+<h3 id="例-4"><a href="#例-4" class="headerlink" title="例"></a>例</h3><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>shadow-none p-4 mb-4 bg-light<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>No shadow<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>shadow-sm p-4 mb-4 bg-white<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Small shadow<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>shadow p-4 mb-4 bg-white<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Default shadow<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>shadow-lg p-4 mb-4 bg-white<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Large shadow<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_shadow&amp;stacked=h">自己尝试»</a></p>
+<h2 id="垂直对齐"><a href="#垂直对齐" class="headerlink" title="垂直对齐"></a>垂直对齐</h2><p>使用这些<code>align-</code>类来更改元素的对齐方式（仅适用于内联，内联块，内联表和表单元格元素）：</p>
+<h3 id="例-5"><a href="#例-5" class="headerlink" title="例"></a>例</h3><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>align-baseline<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>baseline<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>align-top<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>top<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>align-middle<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>middle<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>align-bottom<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>bottom<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>align-text-top<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>text-top<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>align-text-bottom<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>text-bottom<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_align&amp;stacked=h">自己尝试»</a></p>
+<h2 id="响应式嵌入"><a href="#响应式嵌入" class="headerlink" title="响应式嵌入"></a>响应式嵌入</h2><p>根据父级的宽度创建自适应视频或幻灯片嵌入。</p>
+<p>将添加<code>.embed-responsive-item</code>到父元素中的任何嵌入元素（例如&lt;iframe&gt;或&lt;video&gt;），<code>.embed-responsive</code>并选择纵横比：</p>
+<h3 id="例-6"><a href="#例-6" class="headerlink" title="例"></a>例</h3><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token comment">&lt;!-- 21:9 aspect ratio --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>embed-responsive embed-responsive-21by9<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>embed-responsive-item<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>...<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 16:9 aspect ratio --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>embed-responsive embed-responsive-16by9<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>embed-responsive-item<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>...<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 4:3 aspect ratio --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>embed-responsive embed-responsive-4by3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>embed-responsive-item<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>...<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 1:1 aspect ratio --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>embed-responsive embed-responsive-1by1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>embed-responsive-item<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>...<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_embeds">自己尝试»</a></p>
+<h2 id="能见度"><a href="#能见度" class="headerlink" title="能见度"></a>能见度</h2><p>使用<code>.visible</code>或<code>.invisible</code>类来控制元素的可见性。<strong>注意：</strong>这些类不会更改CSS显示值。他们只添加<code>visibility:visible</code>或<code>visibility:hidden</code>：</p>
+<h3 id="例-7"><a href="#例-7" class="headerlink" title="例"></a>例</h3><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>visible<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>I am visible<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>invisible<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>I am invisible<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_visibility&amp;stacked=h">自己尝试»</a></p>
+<h2 id="位置"><a href="#位置" class="headerlink" title="位置"></a>位置</h2><p>使用<code>.fixed-top</code>该类可使任何元素固定/停留在页面<strong>顶部</strong>：</p>
+<h3 id="例-8"><a href="#例-8" class="headerlink" title="例"></a>例</h3><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>navbar navbar-expand-sm bg-dark navbar-dark fixed-top<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  ...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_fixed&amp;stacked=h">自己尝试»</a></p>
+<p>使用<code>.fixed-bottom</code>该类可将任何元素固定/停留在页面<strong>底部</strong>：</p>
+<h3 id="例-9"><a href="#例-9" class="headerlink" title="例"></a>例</h3><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+ ...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_fixed_bottom&amp;stacked=h">自己尝试»</a></p>
+<p>使用<code>.sticky-top</code>该类，可以使所有元素在滚动到页面<strong>顶部</strong>时固定/停留在页面<strong>顶部</strong>。<strong>注意：</strong> 此类在IE11及更低版本中不起作用（将其视为<code>position:relative</code>）。</p>
+<h3 id="例-10"><a href="#例-10" class="headerlink" title="例"></a>例</h3><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>navbar navbar-expand-sm bg-dark navbar-dark sticky-top<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+ ...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_navbar_fixed_sticky&amp;stacked=h">自己尝试»</a></p>
+<h2 id="关闭图示"><a href="#关闭图示" class="headerlink" title="关闭图示"></a>关闭图示</h2><p>使用<code>.close</code>该类设置关闭图标的样式。这通常用于警报和模式。请注意，我们使用该<code>×</code>符号来创建实际的图标（外观更好的“ x”）。另请注意，默认情况下它会向右浮动：</p>
+<h3 id="例-11"><a href="#例-11" class="headerlink" title="例"></a>例</h3><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>close<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token entity named-entity" title="×">&amp;times;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_close&amp;stacked=h">自己尝试»</a></p>
+<h2 id="屏幕阅读器"><a href="#屏幕阅读器" class="headerlink" title="屏幕阅读器"></a>屏幕阅读器</h2><p>使用<code>.sr-only</code>该类可在除屏幕阅读器之外的所有设备上隐藏元素：</p>
+<h3 id="例-12"><a href="#例-12" class="headerlink" title="例"></a>例</h3><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>I will be hidden on all screens except for screen readers.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_sr&amp;stacked=h">自己尝试»</a></p>
+<h2 id="色彩"><a href="#色彩" class="headerlink" title="色彩"></a>色彩</h2><p>如“ <a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/bootstrap_colors.asp">颜色”</a>一章中所述，这是所有文本和背景颜色类别的列表：</p>
+<p>文本颜色的类是：<code>.text-muted</code>， <code>.text-primary</code>，<code>.text-success</code>，<code>.text-info</code>， <code>.text-warning</code>，<code>.text-danger</code>，<code>.text-secondary</code>，<code>.text-white</code>， <code>.text-dark</code>，<code>.text-body</code>（默认车身颜色/常黑）和<code>.text-light</code>：</p>
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_colors&amp;stacked=h">自己尝试»</a></p>
+<p>上下文文本类也可以在链接上使用，这将添加更深的悬停颜色：</p>
+<h3 id="例-13"><a href="#例-13" class="headerlink" title="例"></a>例</h3><p><a href="javascript:void(0)">Muted link.</a> <a href="javascript:void(0)">Primary link.</a> <a href="javascript:void(0)">Success link.</a> <a href="javascript:void(0)">Info link.</a> <a href="javascript:void(0)">Warning link.</a> <a href="javascript:void(0)">Danger link.</a> <a href="javascript:void(0)">Secondary link.</a> <a href="javascript:void(0)">Dark grey link.</a> <a href="javascript:void(0)">Body/black link.</a> <a href="javascript:void(0)">Light grey link.</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_colors_links&amp;stacked=h">自己尝试»</a></p>
+<p>您还可以使用<code>.text-black-50</code>或<code>.text-white-50</code>类为黑色或白色文本添加50％的不透明度：</p>
+<h3 id="例-14"><a href="#例-14" class="headerlink" title="例"></a>例</h3><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Opacity Text Colors<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Add 50% opacity for black or white text with the .text-black-50 or .text-white-50 classes:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-black-50<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Black text with 50% opacity on white background<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-white-50 bg-dark<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>White text with 50% opacity on black background<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_colors_opacity&amp;stacked=h">自己尝试»</a></p>
+<h2 id="背景颜色"><a href="#背景颜色" class="headerlink" title="背景颜色"></a>背景颜色</h2><p>为背景色的类别是：<code>.bg-primary</code>，<code> .bg-success</code>，<code>.bg-info</code>，<code>.bg-warning</code>，<code>.bg-danger</code>，<code>.bg-secondary</code>，<code>.bg-dark</code>和<code>.bg-light</code>。</p>
+<p>请注意，背景颜色不会设置文本颜色，因此在某些情况下，您需要将它们与<code>.text-*</code>类一起使用。</p>
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_bgcolors&amp;stacked=h">自己尝试»</a></p>
+<hr>
+<h2 id="版式-文字类"><a href="#版式-文字类" class="headerlink" title="版式/文字类"></a>版式/文字类</h2><p>正如所描述的<a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/bootstrap_typography.asp">排版</a>章节，这里是所有版式/文字类的列表：</p>
+<table>
+<thead>
+<tr>
+<th align="left">Class</th>
+<th align="left">Description</th>
+<th align="left">Example</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>.display-*</code></td>
+<td align="left">Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight), and there are four classes to choose from: <code>.display-1</code>, <code>.display-2</code>, <code>.display-3</code>, <code>.display-4</code></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_display&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.font-weight-bold</code></td>
+<td align="left">Bold text</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_font-weight&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.font-weight-bolder</code></td>
+<td align="left">Bolder bold text</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_font-weight&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.font-weight-normal</code></td>
+<td align="left">Normal text</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_font-weight&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.font-weight-light</code></td>
+<td align="left">Light weight text</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_font-weight&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.font-weight-lighter</code></td>
+<td align="left">Lighter weight text</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_font-weight&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.font-italic</code></td>
+<td align="left">Italic text</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_txt_font-weight&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.lead</code></td>
+<td align="left">Makes a paragraph stand out</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_txt_lead&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.small</code></td>
+<td align="left">Indicates smaller text (set to 85% of the size of the parent)</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_txt_small&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.text-break</code></td>
+<td align="left">Prevents long text from breaking layout</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-break">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.text-center</code></td>
+<td align="left">Indicates center-aligned text</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-left&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.text-decoration-none</code></td>
+<td align="left">Removes the underline from a link</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_txt_decoration&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.text-left</code></td>
+<td align="left">Indicates left-aligned text</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-left&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.text-justify</code></td>
+<td align="left">Indicates justified text</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-left&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.text-monospace</code></td>
+<td align="left">Monospaced text</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-monospace&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.text-nowrap</code></td>
+<td align="left">Indicates no wrap text</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-left&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.text-lowercase</code></td>
+<td align="left">Indicates lowercased text</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-lowercase&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.text-reset</code></td>
+<td align="left">Resets the color of a text or a link (inherits the color from its parent)</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_txt_reset&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.text-right</code></td>
+<td align="left">Indicates right-aligned text</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-left&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.text-uppercase</code></td>
+<td align="left">Indicates uppercased text</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-lowercase&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.text-capitalize</code></td>
+<td align="left">Indicates capitalized text</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_text-lowercase&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.initialism</code></td>
+<td align="left">Displays the text inside an <code>&lt;abbr&gt;</code> element in a slightly smaller font size</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_txt_abbr2&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.list-unstyled</code></td>
+<td align="left">Removes the default list-style and left margin on list items (works on both <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code>). This class only applies to immediate children list items (to remove the default list-style from any nested lists, apply this class to any nested lists as well)</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_txt_list-unstyled&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.list-inline</code></td>
+<td align="left">Places all list items on a single line (used together with <code>.list-inline-item</code> on each <li> elements)</li></td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_txt_list-inline&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.pre-scrollable</code></td>
+<td align="left">Makes a <code>&lt;pre&gt;</code> element scrollable</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_ref_txt_pre&amp;stacked=h">Try it</a></td>
+</tr>
+</tbody></table>
+<h2 id="块元素"><a href="#块元素" class="headerlink" title="块元素"></a>块元素</h2><p>要将元素变成块元素，请添加<code>.d-block</code>类。使用任何<code>d-*-block</code>类来控制何时元素应为特定屏幕宽度上的块元素：</p>
+<h3 id="例-15"><a href="#例-15" class="headerlink" title="例"></a>例</h3><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>d-block bg-success<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>d-block<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>d-sm-block bg-success<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>d-sm-block<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>d-md-block bg-success<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>d-md-block<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>d-lg-block bg-success<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>d-lg-block<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>d-xl-block bg-success<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>d-xl-block<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_util_display-block">自己尝试»</a></p>
+<h2 id="其他显示类别"><a href="#其他显示类别" class="headerlink" title="其他显示类别"></a>其他显示类别</h2><p>其他显示类别也可用：</p>
+<table>
+<thead>
+<tr>
+<th align="left">Class</th>
+<th align="left">Description</th>
+<th align="right">Example</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>.d-none</code></td>
+<td align="left">Hides an element</td>
+<td align="right"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_display_none&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.d-*-none</code></td>
+<td align="left">Hides an element on a specific screen size</td>
+<td align="right"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_display_none_responsive">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.d-inline</code></td>
+<td align="left">Makes an element inline</td>
+<td align="right"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_display_inline&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.d-*-inline</code></td>
+<td align="left">Makes an element inline on a specific screen size</td>
+<td align="right"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_display_inline_responsive">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.d-inline-block</code></td>
+<td align="left">Makes an element inline block</td>
+<td align="right"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_display_inline-block&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.d-*-inline-block</code></td>
+<td align="left">Makes an element inline block on a specific screen size</td>
+<td align="right"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_display_inline-blockr">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.d-table</code></td>
+<td align="left">Makes an element display as a table</td>
+<td align="right"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_display_table&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.d-*-table</code></td>
+<td align="left">Makes an element display as a table on a specific screen size</td>
+<td align="right"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_display_table_responsive">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.d-table-cell</code></td>
+<td align="left">Makes an element display as a table cell</td>
+<td align="right"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_display_table&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.d-*-table-cell</code></td>
+<td align="left">Makes an element display as a table cell on a specific screen size</td>
+<td align="right"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_display_table_responsive">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.d-table-row</code></td>
+<td align="left">Makes an element display as a table row</td>
+<td align="right"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_display_table&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.d-*-table-row</code></td>
+<td align="left">Makes an element display as a table row on a specific screen size</td>
+<td align="right"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_display_table_responsive">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.d-flex</code></td>
+<td align="left">Creates a flexbox container and transforms direct children into flex items</td>
+<td align="right"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_flex&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.d-*-flex</code></td>
+<td align="left">Creates a flexbox container on a specific screen size</td>
+<td align="right"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_flex-responsive">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.d-inline-flex</code></td>
+<td align="left">Creates an inline flexbox container</td>
+<td align="right"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_flex-inline&amp;stacked=h">Try it</a></td>
+</tr>
+<tr>
+<td align="left"><code>.d-*-inline-flex</code></td>
+<td align="left">Creates an inline flexbox container on a specific screen size</td>
+<td align="right"><a target="_blank" rel="noopener" href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_flex-inline-responsive">Try it</a></td>
+</tr>
+</tbody></table>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/luckyforefforts/about" rel="external nofollow noreferrer">luwanglin</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://luwanglin.gitee.io/luckyforefforts/2020/08/16/bootstrap-4-shi-yong-cheng-xu-yuan-zi-w3schools/">https://luwanglin.gitee.io/luckyforefforts/2020/08/16/bootstrap-4-shi-yong-cheng-xu-yuan-zi-w3schools/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/luckyforefforts/about" target="_blank">luwanglin</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/luckyforefforts/tags/Bootstrap%E5%B8%B8%E7%94%A8%E6%A0%B7%E5%BC%8F%E6%89%8B%E5%86%8C/">
+                                    <span class="chip bg-color">Bootstrap常用样式手册</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/luckyforefforts/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/luckyforefforts/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/luckyforefforts/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/luckyforefforts/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/luckyforefforts/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/luckyforefforts/libs/valine/av-min.js"></script>
+<script src="/luckyforefforts/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'pxFDYRsLF63WhjaDAudsi47P-gzGzoHsz',
+        appKey: 'DelXOmqgYir3NIOlzu3hL5ik',
+        notify: 'true' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: 'just go go'
+    });
+</script>
+
+<!--酷Q推送-->
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/luckyforefforts/2020/08/16/gong-ju-typora-chang-yong-yu-fa/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/luckyforefforts/medias/featureimages/6.jpg" class="responsive-img" alt="工具-Typora常用语法">
+                        
+                        <span class="card-title">工具-Typora常用语法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-16
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/luckyforefforts/categories/typora/" class="post-category">
+                                    typora
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/luckyforefforts/tags/Markdown%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">Markdown语法笔记</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/luckyforefforts/2020/08/16/bootstrap-4-flex-dan-xing-bu-ju/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/luckyforefforts/medias/featureimages/1.jpg" class="responsive-img" alt="Bootstrap 4 Flex（弹性）布局">
+                        
+                        <span class="card-title">Bootstrap 4 Flex（弹性）布局</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/luckyforefforts/categories/Bootstrap4-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    Bootstrap4 学习笔记
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/luckyforefforts/tags/%E5%B8%83%E5%B1%80/">
+                        <span class="chip bg-color">布局</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/luckyforefforts/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/luckyforefforts/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/luckyforefforts/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/luckyforefforts/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/luckyforefforts/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/luckyforefforts/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="120456214"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/luckyforefforts/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2021</span>
+            
+            <a href="/luckyforefforts/about" target="_blank">luwanglin</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">85.7k</span>&nbsp;字
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link ">
+    <a href="https://github.com/luwanglin" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1769862620@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1769862620" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1769862620" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+    <a href="https://www.zhihu.com/people/chen-zao-12-93" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/chen-zao-12-93" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a>
+
+
+
+    <a href="/luckyforefforts/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/luckyforefforts/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/luckyforefforts/libs/materialize/materialize.min.js"></script>
+    <script src="/luckyforefforts/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/luckyforefforts/libs/aos/aos.js"></script>
+    <script src="/luckyforefforts/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/luckyforefforts/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/luckyforefforts/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/luckyforefforts/libs/others/clicklove.js" async="async"></script>
+    
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/luckyforefforts/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
